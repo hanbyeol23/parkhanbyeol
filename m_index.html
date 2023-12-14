@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL LISSITZKY</title>
+    <link href="css/m_index.css" rel="stylesheet">
+    <script>
+        function Mobile(){
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
+        if (Mobile()){
+        } else {
+        location.href="index.html";
+        }
+        </script>
+</head>
+<body>
+    <div class="menubar">
+        <div class="logo"><a href="m_index.html"><img src="img/logo.png"></div>
+        <div class="menu" id="open">
+            <div class="container">
+                <input type="checkbox" id="trigger">
+                <label for="trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <ul class="menulist" id="menubox">
+        <li><a href="m_sub01.html">introduce</a></li>
+        <li><a href="m_sub02.html">history</a></li>
+        <li><a href="m_sub03.html">works</a></li>
+        <div class="cbt" id="close">Menu Close</div>
+    </ul>
+
+    <div class="wrap1">
+    </div>
+    <div class="wrap2">
+        <a href="m_sub01.html">INTRODUCE</a>
+    </div>
+    <div class="wrap3">
+        <a href="m_sub02.html">HISTORY</a>
+    </div>
+    <div class="wrap4">
+        <a href="m_sub03.html">WORKS</a>
+    </div>
+
+    <div class="footer">
+        <div class="ft_1">
+        <ul>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">지식백과</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">콘텐츠 수정 및 오류신고</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+
+          <div class="ft_2">
+            <p class="ft">COPYRIGHT © EL LISSITZKY.ALL RIGHTS RESERVED.</p>
+          </div>     
+        </div>
+</body>
+<script>
+    document.getElementById('open').addEventListener('click',function(){
+        document.getElementById('menubox').style.display = 'block';
+    });
+    document.getElementById('close').addEventListener('click',function(){
+        document.getElementById('menubox').style.display = 'none';
+    });
+</script>
+</html>
